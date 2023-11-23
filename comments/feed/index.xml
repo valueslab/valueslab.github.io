@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:atom="http://www.w3.org/2005/Atom"
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
 	>
-
 <channel>
-	<title>ValuesLab</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=305" rel="self" type="application/rss+xml" />
+	<title>
+	Comments for ValuesLab	</title>
+	<atom:link href="http://localhost/comments/feed/?simply_static_page=337" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 13 Nov 2023 21:14:44 +0000</lastBuildDate>
-	<language>en-US</language>
+	<lastBuildDate>Thu, 23 Nov 2023 19:25:25 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
