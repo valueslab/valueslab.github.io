@@ -8,16 +8,16 @@
 	>
 
 <channel>
-	<title>ValuesLab</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=367" rel="self" type="application/rss+xml" />
+	<title>ValuesLab | Katja Maria Vogt | Professor of Philosophy</title>
+	<atom:link href="http://localhost/feed/?simply_static_page=398" rel="self" type="application/rss+xml" />
 	<link>/</link>
-	<description>Katja Maria Vogt &#124; Columbia University</description>
-	<lastBuildDate>Wed, 29 Nov 2023 12:29:12 +0000</lastBuildDate>
+	<description></description>
+	<lastBuildDate>Thu, 07 Dec 2023 13:47:40 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.4.1</generator>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
 </channel>
 </rss>
