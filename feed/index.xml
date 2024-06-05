@@ -9,15 +9,15 @@
 
 <channel>
 	<title>ValuesLab | Katja Maria Vogt | Professor of Philosophy</title>
-	<atom:link href="http://localhost/feed/?simply_static_page=1506" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost/feed/?simply_static_page=1537" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Tue, 04 Jun 2024 06:38:31 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 05 Jun 2024 16:55:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.3</generator>
+	<generator>https://wordpress.org/?v=6.5.4</generator>
 </channel>
 </rss>
