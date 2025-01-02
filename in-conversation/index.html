@@ -78,7 +78,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button)):focus){text-decoration: underline dashed;}
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button)):active){color: var(--wp--preset--color--secondary);text-decoration: none;}
 :root :where(.wp-block-separator){}:root :where(.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull)){width: 100px}</style>
-<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{justify-content:space-between;}.wp-container-core-group-is-layout-4 > .alignfull{margin-right:calc(var(--wp--preset--spacing--40) * -1);margin-left:calc(var(--wp--preset--spacing--40) * -1);}.wp-container-core-group-is-layout-6{justify-content:space-between;}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{justify-content:space-between;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-3{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-core-group-is-layout-4 > .alignfull{margin-right:calc(var(--wp--preset--spacing--40) * -1);margin-left:calc(var(--wp--preset--spacing--40) * -1);}.wp-container-core-group-is-layout-6{justify-content:space-between;}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -136,11 +136,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <div class="wp-site-blocks">
 <header class="wp-block-template-part">
-<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-	
-	<div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex" style="padding-bottom:var(--wp--preset--spacing--40)">
-		<p class="wp-block-site-title"><a href="/" target="_self" rel="home">ValuesLab | Katja Maria Vogt | Professor of Philosophy</a></p>
-		<nav class="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-wp-on-async--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained wp-container-3 is-position-sticky">
+<div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex wp-container-2 is-position-sticky" style="padding-bottom:var(--wp--preset--spacing--40)">
+<p class="wp-block-site-title"><a href="/" target="_self" rel="home">ValuesLab | Katja Maria Vogt | Professor of Philosophy</a></p>
+
+<nav class="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="Navigation" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-wp-on-async--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
 				<div class="wp-block-navigation__responsive-container  " id="modal-1" data-wp-class--has-modal-open="state.isMenuOpen" data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--focusout="actions.handleMenuFocusout" tabindex="-1">
 					<div class="wp-block-navigation__responsive-close" tabindex="-1">
 						<div class="wp-block-navigation__responsive-dialog" data-wp-bind--aria-modal="state.ariaModal" data-wp-bind--aria-label="state.ariaLabel" data-wp-bind--role="state.roleAttribute">
@@ -218,10 +218,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 						</div>
 					</div>
 				</div></nav>
-	</div>
-	
 </div>
-
+</div>
 </header>
 
 
@@ -259,7 +257,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 <blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
-<p>[&#8230;] Vogt and Haas are co-founders of the ValuesLab—a project that originated from their reflections on gaps in AI discussions and research that philosophy could bridge. In late 2023, Haas launched the ValuesLab website to highlight the most important considerations for advancing the project. As the two analyzed ongoing AI projects and trends, they realized that “one thing in particular is missing: a place that puts philosophers in a position where they actively contribute to AI.” Haas states, “This is the ValuesLab’s mission. We want to help shape new projects, by collaborating with researchers who build AIs, inside and outside of academia. We also want to keep things focused and independent.”</p>
+<p>Vogt and Haas are co-founders of the ValuesLab—a project that originated from their reflections on gaps in AI discussions and research that philosophy could bridge. In late 2023, Haas launched the ValuesLab website to highlight the most important considerations for advancing the project. As the two analyzed ongoing AI projects and trends, they realized that “one thing in particular is missing: a place that puts philosophers in a position where they actively contribute to AI.” Haas states, “This is the ValuesLab’s mission. We want to help shape new projects, by collaborating with researchers who build AIs, inside and outside of academia. We also want to keep things focused and independent.”</p>
 </blockquote>
 
 
@@ -320,7 +318,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <p class="wp-block-site-title"><a href="/" target="_self" rel="home">ValuesLab | Katja Maria Vogt | Professor of Philosophy</a></p>
 
 
-<p class="has-text-align-right has-small-font-size">© 2024 <a href="https://katjavogt.github.io/">Katja Vogt</a>. Courtesy of <a href="http://ungulateproductions.github.io/">Ungulate Productions</a>. </p>
+<p class="has-text-align-right has-small-font-size">© 2025 <a href="https://katjavogt.github.io/">Katja Vogt</a>. Courtesy of <a href="http://ungulateproductions.github.io/">Ungulate Productions</a>.</p>
 </div>
 </div>
 </footer>
