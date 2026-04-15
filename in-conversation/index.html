@@ -150,8 +150,31 @@ html {
 
 /* Navigation */
 .wp-block-navigation__submenu-container {
-  margin-block: 0 !important;
-  padding-block: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Desktop/menu breakpoint override */
+@media screen and (max-width: 1024px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: flex !important;
+  }
+
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: none !important;
+  }
+
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: block !important;
+    width: 100%;
+    position: relative;
+  }
 }
 
 /* Mobile tweaks */
@@ -184,7 +207,7 @@ html {
 /*# sourceURL=global-styles-inline-css */
 </style>
 <style id="core-block-supports-inline-css">
-.wp-container-core-navigation-is-layout-fc306653{justify-content:flex-end;}.wp-container-core-group-is-layout-c8219190{flex-wrap:nowrap;justify-content:space-between;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-core-group-is-layout-6329a8f3{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:center;}
+.wp-container-core-navigation-is-layout-869dff19{justify-content:flex-end;}.wp-container-core-group-is-layout-c8219190{flex-wrap:nowrap;justify-content:space-between;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-core-group-is-layout-6329a8f3{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:center;}
 /*# sourceURL=core-block-supports-inline-css */
 </style>
 <style id="wp-block-template-skip-link-inline-css">
@@ -243,11 +266,11 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 <body class="wp-singular page-template page-template-page-no-title page page-id-861 wp-embed-responsive wp-theme-twentytwentyfive">
 
 <div class="wp-site-blocks">
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow wp-container-2 is-position-sticky">
+<div class="wp-block-group has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained wp-container-2 is-position-sticky" style="background-color:#eeeeee">
 <div class="wp-block-group alignfull has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#eeeeee;padding-top:0;padding-bottom:0">
 <div class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-c8219190 wp-block-group-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><p class="wp-block-site-title"><a href="/" target="_self" rel="home">ValuesLab</a></p>
 
-<nav class="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-fc306653 wp-block-navigation-is-layout-flex" aria-label="Navigation" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open" data-wp-on--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5h16v1.5H4z"></path><path d="M4 15h16v1.5H4z"></path></svg></button>
+<nav class="is-responsive items-justified-right wp-block-navigation is-horizontal is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-869dff19 wp-block-navigation-is-layout-flex" aria-label="Navigation" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open" data-wp-on--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5h16v1.5H4z"></path><path d="M4 15h16v1.5H4z"></path></svg></button>
 				<div class="wp-block-navigation__responsive-container  has-text-color has-contrast-color has-background has-base-background-color" id="modal-1" data-wp-class--has-modal-open="state.isMenuOpen" data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--focusout="actions.handleMenuFocusout" tabindex="-1">
 					<div class="wp-block-navigation__responsive-close" tabindex="-1">
 						<div class="wp-block-navigation__responsive-dialog" data-wp-bind--aria-modal="state.ariaModal" data-wp-bind--aria-label="state.ariaLabel" data-wp-bind--role="state.roleAttribute">
