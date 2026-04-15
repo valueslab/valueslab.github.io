@@ -85,20 +85,30 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
   --scroll-offset: 40px;
 }
 
+/* Base layout first (this gets applied immediately) */
+html {
+  scroll-padding-top: var(--scroll-offset);
+}
+
 body {
   color: var(--base-color);
   background: var(--bg);
+
+  /* Typography here instead of * */
+  font-family: Times, serif;
+  font-size: var(--font-size);
+  line-height: 1.5;
 }
 
-/* Global override: enforce one font + one size everywhere */
-* {
-  font-family: Times, serif !important;
-  font-size: var(--font-size) !important;
-  text-transform: none !important;
-  border: 0 !important;
+/* Only normalize elements that WP tends to mess with */
+p, li, blockquote, figcaption,
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: none;
 }
 
-/* Kill ALL WP font size presets explicitly */
+/* Target WP font classes specifically (keep this) */
 .has-small-font-size,
 .has-medium-font-size,
 .has-large-font-size,
@@ -107,15 +117,10 @@ body {
   font-size: var(--font-size) !important;
 }
 
-/* Header */
-header {
-  background: var(--bg);
-}
-
 /* Titles */
 .wp-block-post-title,
 .entry-title {
-  text-align: center !important;
+  text-align: center;
 }
 
 /* Spacing fix */
@@ -123,13 +128,14 @@ header {
   margin-top: 2rem;
 }
 
-/* Anchor offset for sticky header */
-html {
-  scroll-padding-top: var(--scroll-offset);
+/* Anchor offset (keep, but simpler selector) */
+[id] {
+  scroll-margin-top: var(--scroll-offset);
 }
 
-:where(h1, h2, h3, h4, h5, h6, section, [id]) {
-  scroll-margin-top: var(--scroll-offset);
+/* Header */
+header {
+  background: var(--bg);
 }
 
 /* Image cleanup */
@@ -137,45 +143,43 @@ html {
 .wp-block-image::after,
 .wp-block-image figure::before,
 .wp-block-image figure::after {
-  content: none !important;
-  display: none !important;
+  content: none;
+  display: none;
 }
 
 .wp-block-image img {
-  filter: none !important;
+  filter: none;
 }
 
 .wp-block-image figcaption {
-  position: static !important;
-  inset: auto !important;
-  background: none !important;
-  backdrop-filter: none !important;
+  position: static;
+  background: none;
 }
 
-/* Navigation */
+/* Navigation (unchanged logic, just less !important) */
 .wp-block-navigation__submenu-container {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
-/* Desktop/menu breakpoint override */
+/* Responsive behavior */
 @media screen and (max-width: 1024px) {
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
-    display: flex !important;
+    display: flex;
   }
 
   .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-    display: none !important;
+    display: none;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
-    display: none !important;
+    display: none;
   }
 
   .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-    display: block !important;
+    display: block;
     width: 100%;
     position: relative;
   }
