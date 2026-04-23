@@ -147,47 +147,62 @@ backdrop-filter: none !important;
 .wp-block-navigation__submenu-container {
 margin-block: 0 !important;
 padding-block: 0 !important;
+color: var(--base-color) !important;
+background: #f4f4f4 !important;
+}
+
+/* 3rd level submenu */
+.wp-block-navigation
+.wp-block-navigation__submenu-container
+.wp-block-navigation__submenu-container {
+  background: #f8f8f8 !important;
+}
+
+/* Consistent text and background colors hamburger menu */
+.wp-block-navigation__responsive-container {
+color: var(--base-color) !important;
+background: var(--bg) !important;
 }
 
 /* Desktop/menu breakpoint override */
 @media screen and (max-width: 1024px) {
- .wp-block-navigation__responsive-container-open:not(.always-shown) {
-   display: flex !important;
- }
+.wp-block-navigation__responsive-container-open:not(.always-shown) {
+display: flex !important;
+}
 
- .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-   display: none !important;
- }
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+display: none !important;
+}
 }
 
 @media screen and (min-width: 1025px) {
- .wp-block-navigation__responsive-container-open:not(.always-shown) {
-   display: none !important;
- }
+.wp-block-navigation__responsive-container-open:not(.always-shown) {
+display: none !important;
+}
 
- .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-   display: block !important;
-   width: 100%;
-   position: relative;
- }
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+display: block !important;
+width: 100%;
+position: relative;
+}
 }
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
 .wp-block-navigation__submenu-container {
-  text-align: right;
+text-align: right;
 }
 
 .wp-block-navigation__submenu-container .wp-block-navigation-item {
-  justify-content: flex-end;
+justify-content: flex-end;
 }
 
 .wp-block-navigation__submenu-container a {
-  text-align: right;
+text-align: right;
 }
 
 .wp-block-navigation__container {
-  padding-block: 0.5rem;
+padding-block: 0.5rem;
 }
 }
 
