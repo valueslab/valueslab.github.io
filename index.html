@@ -138,14 +138,20 @@ body {
   margin-bottom: 2.5rem !important;
 }
 
-/* Headings */
-.wp-block-post-content h2 {
+/* Section-level spacing:
+   headings + cover blocks */
+.wp-block-post-content h2,
+.wp-block-post-content .wp-block-cover {
   margin-top: 4rem !important;
   margin-bottom: 1rem !important;
+}
+
+/* H2 styling */
+.wp-block-post-content h2 {
   font-weight: 700 !important;
 }
 
-/* Optional: slightly tighter paragraph rhythm */
+/* Optional: slightly better paragraph rhythm */
 .wp-block-post-content p {
   line-height: 1.7;
 }
@@ -287,16 +293,16 @@ nav a,
     padding-block: 0.5rem;
   }
 
-  /* Slightly reduce oversized spacing on mobile */
+  /* Slightly tighter spacing on mobile */
   .wp-block-post-content > * {
     margin-bottom: 2rem !important;
   }
 
-  .wp-block-post-content h2 {
+  .wp-block-post-content h2,
+  .wp-block-post-content .wp-block-cover {
     margin-top: 3rem !important;
   }
 }
-
 :root :where(.wp-block-buttons-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flow) > *{margin-block-start: 16px;margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > *{margin-block-start: 16px;margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flex){gap: 16px;}:root :where(.wp-block-buttons-is-layout-grid){gap: 16px;}
 :root :where(.wp-block-site-tagline){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
